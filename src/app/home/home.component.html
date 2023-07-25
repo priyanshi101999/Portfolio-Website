@@ -1,0 +1,174 @@
+<div class="home">
+
+    <div class="_container ">
+        <div class="_image">
+            <img src="../../assets/priyanshi.png" alt="">
+
+        </div>
+        <div class="_myself">
+            <p class="_intro">HELLO EVERYBODY, I AM </p>
+            <h1 class="_name">PRIYANSHI TRIPATHI</h1>
+            <p class="_work">FRONT END DEVELOPER</p>
+
+            <p class="_paragraph">I am passionate about continuous learning, driven by curiosity.I believe that
+                learning is the best way
+                to stay young.</p>
+
+            <div class="contact">
+                <div class="_personal_details"><i class="fas fa-calendar"></i>
+                    <p class="_information">2nd October 1999</p>
+                </div>
+
+                <div class="_personal_details"><i class="fas fa-phone"></i>
+                    <p class="_information">(+91) 7069798754</p>
+                </div>
+
+                <div class="_personal_details"><i class="fas fa-envelope"></i>
+                    <p class="_information">tripathipriyanshi681@gmail.com</p>
+                </div>
+
+                <div class="_personal_details"><i class="fas fa-home"></i>
+                    <p class="_information">Prabhakiran 2, Abrama, Valsad</p>
+                </div>
+            </div>
+
+            <div class="_link_to_app">
+                <a href="https://www.linkedin.com/in/priyanshi-tripathi-991133206/">
+                    <i class="fab fa-linkedin fa-2x"></i>
+                </a>
+
+                <a href="https://www.behance.net/PriyanshiTripathi">
+                    <i class="fab fa-behance fa-2x"></i>
+                </a>
+                <a href="https://github.com/priyanshi101999">
+                    <i class="fab fa-github fa-2x" routerLink="https://github.com/priyanshi101999"></i></a>
+
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="about">
+    <div class="my-story">
+        <h1>About Me</h1>
+        <p>Welcome✌️ to my portfolio website! I'm thrilled 🤗to have you here. As you explore my projects, I hope
+            you'll catch a glimpse of the passion and dedication I pour into my work.
+            <br><br>
+            Each project is an opportunity😊 for me to embrace challenges and grow.I find joy😊 in the world of
+            front-end development, where I can weave creativity and technology into captivating user experiences🫂.
+            <br> <br>
+            Beyond coding, I find solace in the pages of a good book📙, where I discover new perspectives and embark
+            on fascinating journeys.
+
+            <br><br>
+
+            Nature🍀🌿🍃 is my sanctuary, and a simple walk🚶🏻‍♀️ amidst the beauty of the outdoors rejuvenates my
+            spirit. It's during these moments that I find clarity, inspiration, and the energy to tackle new
+            challenges.
+        </p>
+    </div>
+    <div class="skills">
+        <h1>Hard Skills</h1>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Angular Framework</li>
+            <li>Bootstrap</li>
+            <li>Figma</li>
+            <li>Responsive Design</li>
+
+        </ul>
+        <h1>Soft Skills</h1>
+        <ul>
+            <li>Communication skill</li>
+            <li>Team collaboration</li>
+            <li>Growth Mindset</li>
+            <li>Learner</li>
+            <li>Problem Solving</li>
+            <li>Adaptability</li>
+
+        </ul>
+    </div>
+</div>
+
+<div class="_experience">
+
+    <ul class="_tabs">
+
+        <div class="button-container">
+            <button [ngClass]="{ 'active': activeButton === 'button1' }"
+                (click)="activateButton('button1')">Experience</button>
+            <button [ngClass]="{ 'active': activeButton === 'button2' }"
+                (click)="activateButton('button2')">Education</button>
+        </div>
+
+    </ul>
+
+    <div class="_card " [ngSwitch]="activeButton">
+        <div *ngSwitchCase="'button2'">
+            <div class="_card_1">
+                <div class="_date
+        "><i class="fas fa-calendar"></i>
+                    <p>2017-2020</p>
+                </div>
+
+                <p class="_title"> Bachelor of Science (B.Sc.) in Chemistry </p>
+
+                <ul>
+                    <li class="_subtitle">Veer Narmad South Gujarat University</li>
+                    <li class="_subtitle">CGPA <span style="font-weight: 700;">7.6</span></li>
+                </ul>
+            </div>
+        </div>
+
+
+
+        <div class="_card_1" *ngSwitchCase="'button1'">
+            <div class="_date
+        "><i class="fas fa-calendar"></i>
+                <p>FEB 2023-JUNE 2023</p>
+            </div>
+
+            <p class="_title"> Front-End Developer Intern, </p>
+
+            <ul>
+                <li class="_subtitle">1RIVET Company</li>
+                <li class="_subtitle">Developed responsive and user-friendly web applications using HTML, CSS, and
+                    JavaScript, Angular</li>
+                <li class="_subtitle">Worked with RESTful APIs to fetch and display data on the front end.</li>
+                <li class="_subtitle">Implemented UI improvements and optimized website performance for faster load
+                    times.</li>
+            </ul>
+        </div>
+
+        <div class="_card_1 " *ngSwitchCase="'button1'">
+            <div class="_date
+        "><i class="fas fa-calendar"></i>
+                <p>FEB 2023-APRIL 2023</p>
+            </div>
+
+            <p class="_title"> UI/UX Design Intern</p>
+
+            <ul>
+                <li class="_subtitle">DigiBro Company</li>
+                <li class="_subtitle">Collaborated with design teams to create user-centric website layouts and
+                    prototypes.</li>
+                <li class="_subtitle">Conducted usability testing and gathered feedback to enhance user experience
+                </li>
+                <li class="_subtitle">Utilized design tools (e.g., Adobe XD, Figma) to create interactive mockups
+                    and
+                    wireframes.</li>
+            </ul>
+        </div>
+
+
+
+    </div>
+</div>
+
+<div class="thank-you">
+    Thank you🤗 for visiting my portfolio website! I hope you enjoyed exploring my work and skills.
+</div>

@@ -1,0 +1,72 @@
+<div class="my_work">
+    <h1>MY WORK </h1>
+
+    <div class="button-container">
+        <button [ngClass]="{ 'active': activeButton === 'button1' }" (click)="activateButton('button1')">Front-end
+            Development </button>
+        <button [ngClass]="{ 'active': activeButton === 'button2' }" (click)="activateButton('button2')">UI/UX
+            Design</button>
+    </div>
+
+    <div [ngSwitch]="activeButton">
+        <div class="row " *ngSwitchCase="'button1'">
+            <!-- <div class="work_list" > -->
+            <div class="work ">
+                <a href="https://github.com/priyanshi101999/E-commerce-Website">
+                    <img src="../../assets/E-commerce.png" alt="">
+                </a>
+                <h4>E-Shop</h4>
+                <p>Front-End Development. E-Shop is Online Shopping Website</p>
+            </div>
+
+            <div class="work  ">
+                <a href="https://github.com/priyanshi101999/Desk-book/tree/master/deskbook-frontend-feb-develop">
+                    <img src="../../assets/desk-book.png" alt="">
+                </a>
+                <h4>Desk-book</h4>
+                <p>Front-End Development. Dest-book is Office-desk booking Website</p>
+            </div>
+
+            <div class="work  ">
+                <img src="../../assets/Portfolio.png" alt="" routerLink="" class="project">
+                <h4>Portfolio</h4>
+                <p>Front-End Development. Priyanshi Tripathi is my portfolio Website</p>
+            </div>
+        </div>
+        <div class="row" *ngSwitchCase="'button2'">
+          
+            <div class="work col-sm-4 ">
+                <a href="https://www.behance.net/gallery/155081447/Comfort">
+                    <img src="https://mir-s3-cdn-cf.behance.net/projects/808/f6ba4b155081447.Y3JvcCwxNDI2LDExMTUsMCwzMjQ.png"
+                        alt="">
+
+                </a>
+                <h4>Comfort</h4>
+                <p>UI/UX Design. Comfort is an app to control home Devices.</p>
+            </div>
+
+            <div class="work col-sm-4 ">
+                <a href="https://www.behance.net/gallery/154943511/E-Track">
+                    <img src="https://mir-s3-cdn-cf.behance.net/projects/808/bdf017154943511.Y3JvcCw1NzEyLDQ0NjgsMTE4Nyww.png"
+                        alt="">
+                </a>
+
+                <h4>E-track</h4>
+                <p>UI/UX Design. E-track is an app to track attendance and payment.</p>
+            </div>
+
+            <div class="work col-sm-4 ">
+                <a href="https://www.behance.net/gallery/155135279/easyhomes">
+                    <img src="https://mir-s3-cdn-cf.behance.net/projects/808/6c3650155135279.Y3JvcCwxMjU1LDk4MiwxMTQsMA.png"
+                        alt="">
+                </a>
+
+                <h4>Easyhomes</h4>
+                <p>UI/UX Design. Easyhomes is a website to search rental home.</p>
+            </div>
+
+            
+
+        </div>
+    </div>
+</div>

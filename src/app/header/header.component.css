@@ -1,0 +1,62 @@
+._nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 80px 24px 80px;
+    align-items: center;
+
+}
+
+._nav ul {
+    list-style-type: none;
+    display: inline-flex;
+    gap: 20px;
+}
+
+._nav ul li {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+._nav ._logo {
+    font-size: 28px;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+}
+
+.active-link {
+    font-size: 32px;
+    font-weight: 600;
+    color: white
+}
+
+.hamburger {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    ._nav {
+        padding: 24px 40px 24px 40px;
+    }
+
+    ._nav ._logo {
+        font-size: 24px;
+    }
+
+    .hamburger {
+        display: block;
+        /* Show the hamburger icon on smaller screens */
+        cursor: pointer;
+    }
+
+    .ham-button {
+        background: transparent;
+        border: none;
+        color: white;
+        width: 23px;
+    }
+
+    .nav-items {
+        display: none;
+    }
+}

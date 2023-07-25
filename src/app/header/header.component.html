@@ -1,0 +1,17 @@
+<nav class="_nav">
+    <div class="_logo" routerLink="home">Priyanshi Tripathi</div>
+
+
+    <div class="nav-items">
+        <ul>
+            <li routerLink="home" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }">Home</li>
+            <li routerLink="my-work" routerLinkActive="active-link">My Work</li>
+            <li routerLink="contact-me" routerLinkActive="active-link">Contact Me</li>
+        </ul>
+    </div>
+
+
+    <div class="hamburger">
+        <button (click)="toggleSidebar()" class="ham-button"> <i class="fas fa-bars fa-2x"></i></button>
+    </div>
+</nav>

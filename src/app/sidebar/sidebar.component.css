@@ -1,0 +1,32 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -250px;
+  /* Start with the sidebar hidden */
+  width: 250px;
+  height: 100%;
+  color: black;
+  padding: 56px 20px 80px 20px;
+  background-color: white;
+  transition: left 0.3s ease;
+  box-sizing: border-box;
+  z-index: 1;
+  border: 1px solid #ddd;
+}
+
+.sidebar.open {
+  right: 0;
+  /* Show the sidebar when it's open */
+}
+
+.sidebar ul {
+  margin-top: 64px;
+  padding: 0;
+}
+
+.sidebar ul li {
+  list-style-type: none;
+  font-size: 18px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}

@@ -1,0 +1,11 @@
+<div class="sidebar" [ngClass]="{ 'open': sidebarService.sidebarOpen$ | async }">
+    <div class="close-icon" (click)="closeSidebar()">
+        <i class="fas fa-times fa-x"></i>
+    </div>
+    <ul>
+        <li (click)="closeSidebar()" routerLink="home">Home</li>
+        <li (click)="closeSidebar()" routerLink="my-work">My Work</li>
+        <li (click)="closeSidebar()" routerLink="contact-me">Contact Me</li>
+
+    </ul>
+</div>

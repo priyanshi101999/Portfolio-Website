@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import '~@fortawesome/fontawesome-free/css/all.css';
+
+
+html body{
+margin: 0px ;
+padding: 0;
+width: 100%;
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+background-color: #ffffff;
+background-image: url("https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT3Ey5Q3E21Tsba28p5e7jrN4ujtfLjr-gmbx1EDGvE9DiQnZWG") ;
+background-size: contain;
+background-repeat: no-repeat;
+}
